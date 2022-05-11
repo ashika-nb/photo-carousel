@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>Photo Gallery</h1>
+  <div >
+    <img 
+    src="assets/images/{{currentPage}}.jpg" alt="">
+  </div>
+  <div class="pagination">
+    <a (click)="setPages(currentPage-1)"  [ngClass]="{'disabled': currentPage == 1}" >&lt;</a>
+    <a (click)="setPages(page)"  *ngFor="let page of pages" [ngClass]="{'active': page == currentPage}">{{page}}</a>
+    <a (click)="setPages(currentPage+1)" [ngClass]="{'disabled': currentPage == allPages[allPages.length-1]}" >&gt;</a>
+  </div>
+</div>

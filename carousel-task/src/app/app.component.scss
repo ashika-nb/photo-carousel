@@ -1,0 +1,23 @@
+.container{
+    img{
+        width: 200px;
+        height: 200px;
+    }
+    .pagination{
+        margin-top: 20px;
+        a{
+            padding: 10px;
+            cursor: pointer;
+            &.active{
+                background: rgb(73, 73, 230);
+                color: white;
+            }
+            &.disabled{
+                color: grey;
+                cursor:not-allowed;
+            }
+        }
+    }
+    
+    
+}
